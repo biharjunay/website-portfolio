@@ -3,7 +3,17 @@
     src: url('../fonts/Roboto-Regular.ttf');
 }
 
-* {
+@font-face {
+    font-family: 'Share-Tech';
+    src: url('../fonts/ShareTech-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,4 +25,12 @@ main.main {
     height: 100vh;
     background: #04132A;
     background-size: cover;
+}
+
+.font-share-tech {
+    font-family: 'Share-Tech';
+}
+
+.poppins-bold {
+    font-family: 'Poppins-Bold';
 }

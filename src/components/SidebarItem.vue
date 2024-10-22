@@ -7,7 +7,7 @@
                 :class="{ 'text-blue-400': currentRoute === item.name }" v-for="(item, index) in sidebarItem"
                 :key="index">
                 <i :class="item.icon + ' text-4xl'"></i>
-                <span class="font-semibold capitalize">{{ item.name }}</span>
+                <span class="capitalize">{{ item.name }}</span>
                 <div v-if="currentRoute === item.name"
                     class="absolute w-1 h-full bg-blue-400 rounded-full right-0 top-1/2 -translate-y-1/2"></div>
             </RouterLink>
@@ -15,8 +15,6 @@
     </div>
 </template>
 <script lang="ts">
-import { RouterLink } from 'vue-router';
-
 export default {
     data() {
         return {
